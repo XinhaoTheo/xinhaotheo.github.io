@@ -17,8 +17,9 @@ bio: |
   University. His interests are in Machine Learning Systems and AI
   Infrastructure — efficient training, post-training, and serving of large
   language models. First author of "Open-world Authorship Attribution"
-  (ACL 2025 Findings). Joining TikTok Search as ML Engineer Intern in
-  Summer 2026; open to chats about ML Systems / AI Infra opportunities.
+  (ACL 2025 Findings). Currently an ML Engineer Intern on Ads Search
+  Relevance at ByteDance (TikTok); open to chats about ML Systems /
+  AI Infra opportunities.
 
 affiliations:
   - name: Carnegie Mellon University
@@ -44,6 +45,7 @@ interests:
 education:
   - degree: M.S. in Information Networking
     institution: Carnegie Mellon University
+    logo: media/logos/cmu.svg
     start: 2025-08-01
     end: 2026-12-31
     summary: |
@@ -51,32 +53,41 @@ education:
       Computer Networks, AI Infrastructure.
   - degree: B.Eng. in Electrical Engineering (Minor in Artificial Intelligence)
     institution: National University of Singapore
+    logo: media/logos/nus.svg
     start: 2021-08-01
     end: 2025-08-01
     summary: |
       GPA 4.73/5.00. Track: Internet of Things (IoT).
 
 experience:
-  - role: Machine Learning Engineer Intern (Incoming)
-    org: TikTok — Search Team
-    start: 2026-05-26
-    end: 2026-08-14
+  - role: Machine Learning Engineer Intern, Ads Search Relevance
+    org: ByteDance (TikTok)
+    icon: brands/tiktok
+    start: 2026-05-01
+    end: 2026-08-01
     summary: |
-      Joining the TikTok Search Engineering team in San Jose for Summer 2026.
-      Will work on the search core algorithm — content understanding (NLP /
-      CV / LLM for query–video relevance), user-behavior modeling for
-      personalization, and video understanding for authority and credibility
-      of search results.
+      - Distilled online cross-encoder scores into **Qwen3 4B dual-tower**
+        rough-ranking models for coarse-to-fine ads relevance; online A/B tests
+        lifted **adVV by 2.9%** and ad spend by 0.34%.
+      - Built end-to-end cache compression for **InternVL3.5-4B** under the
+        CoTrain architecture (field-aware token compression 1024→8 tokens plus
+        an encoder–decoder for dimension compression), cutting representation
+        cache by **640×** while staying within 0.2 pp of the full-cache model.
+      - Post-trained a **Qwen2.5-7B AI Search agent** with full-parameter SFT on
+        judge-filtered tool-use trajectories and on-policy **GRPO** with a
+        distilled 7B reward model; Grade-A card rate **51.0% → 57.1%** at 94%
+        lower generation cost than GPT-5.4-mini.
   - role: 3D Object-Tracking Researcher (Seasonal)
     org: Aruvii
+    icon: cube-transparent
     start: 2024-08-01
     end: 2025-05-01
     summary: |
-      LiDAR-based 3D multi-object tracking for human-security applications.
-      Built a real-time ROS/RViz pipeline (Kalman filter + Hungarian
-      data association within Fast-Poly), and an Interacting Multiple Model
-      filter with CV / CVTR motion models — 11% accuracy gain on non-linear
-      object motion.
+      - LiDAR-based **3D multi-object tracking** for human-security applications.
+      - Built a real-time ROS/RViz pipeline (Kalman filter + Hungarian data
+        association within Fast-Poly).
+      - Added an **Interacting Multiple Model** filter with CV / CVTR motion
+        models — **11% accuracy gain** on non-linear object motion.
 
 skills:
   - name: Programming
